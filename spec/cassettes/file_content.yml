@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:4567/upload
+    body:
+      encoding: UTF-8
+      string: "--------------------------nj6GkAc4AWm-Z1l3\r\nContent-Disposition:
+        form-data; name=\"kcmD3L4vjlAKsY0Z\"; filename=\"20231022-75612-xp8e7b\"\r\nContent-Type:
+        application/octet-stream\r\n\r\nfile content\r\n--------------------------nj6GkAc4AWm-Z1l3--\r\n"
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - multipart/form-data; boundary=------------------------nj6GkAc4AWm-Z1l3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      - text/html;charset=utf-8
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '53'
+    body:
+      encoding: UTF-8
+      string: '{"session_id":"72f463a8-267e-4c23-83df-626350922abb"}'
+  recorded_at: Sun, 22 Oct 2023 16:40:26 GMT
+recorded_with: VCR 6.2.0

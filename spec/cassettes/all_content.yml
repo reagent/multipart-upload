@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:4567/upload
+    body:
+      encoding: UTF-8
+      string: "--------------------------BBWtEl3_2HozmQ1m\r\nContent-Disposition:
+        form-data; name=\"vhDnJiGp5ZsuFLNI\"; filename=\"20231022-75612-nk3767\"\r\nContent-Type:
+        application/octet-stream\r\n\r\nfile_1\r\n--------------------------BBWtEl3_2HozmQ1m\r\nContent-Disposition:
+        form-data; name=\"unoKrPEcxoKBJYD1\"; filename=\"20231022-75612-z1lovs\"\r\nContent-Type:
+        application/octet-stream\r\n\r\nfile_2\r\n--------------------------BBWtEl3_2HozmQ1m\r\nContent-Disposition:
+        form-data; name=\"KhJ9mzpx3niXYwXy\"; filename=\"content.dat\"\r\nContent-Type:
+        text/plain\r\n\r\nstring\r\n--------------------------BBWtEl3_2HozmQ1m--\r\n"
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - multipart/form-data; boundary=------------------------BBWtEl3_2HozmQ1m
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      - text/html;charset=utf-8
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '53'
+    body:
+      encoding: UTF-8
+      string: '{"session_id":"e33b85bc-8846-40b7-a10a-e0a0ada1e840"}'
+  recorded_at: Sun, 22 Oct 2023 16:40:26 GMT
+recorded_with: VCR 6.2.0
